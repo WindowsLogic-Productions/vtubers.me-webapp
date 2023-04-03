@@ -148,6 +148,17 @@ Public Class VTuberMain
     Private Sub TweetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TweetToolStripMenuItem.Click
         WebView21.CoreWebView2.Navigate("https://vtubers.me/post")
     End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        If Me.Text.Contains("1") Then
+            Me.Icon = My.Resources.vtubers_notif
+            Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
+            SysTrayIcon.ShowBalloonTip(1, "VTubers.me Web App - Notification", "You have unread notifications.", ToolTipIcon.Info)
+        ElseIf WebView21.CoreWebView2.Source.ToString = "https://vtubers.me/notifications" Then
+            Me.Icon = My.Resources.vtubers
+            Me.SysTrayIcon.Icon = My.Resources.vtubers
+        End If
+    End Sub
 #End Region
 
 End Class
