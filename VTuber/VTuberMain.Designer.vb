@@ -25,10 +25,18 @@ Partial Class VTuberMain
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VTuberMain))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SysTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.SysTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
         Me.Back_TSB = New System.Windows.Forms.ToolStripButton()
         Me.Forward_TSB = New System.Windows.Forms.ToolStripButton()
         Me.Refresh_TSB = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.Home_TSB = New System.Windows.Forms.ToolStripButton()
         Me.Notification_TSB = New System.Windows.Forms.ToolStripButton()
         Me.Messages_TSB = New System.Windows.Forms.ToolStripButton()
@@ -38,14 +46,12 @@ Partial Class VTuberMain
         Me.Lists_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mentions_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.GoToUser_TSM = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.Account_TSB = New System.Windows.Forms.ToolStripDropDownButton()
         Me.TwitterSettings_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeyboardShortcutsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutTwitterToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
         Me.LogOutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.Application_TSB = New System.Windows.Forms.ToolStripDropDownButton()
         Me.NewWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsPanel_TSM = New System.Windows.Forms.ToolStripMenuItem()
@@ -58,15 +64,9 @@ Partial Class VTuberMain
         Me.About_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_TSM = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.SysTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.SysTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Restore_TMO = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.TweetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_TMO = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,6 +84,62 @@ Partial Class VTuberMain
         Me.ToolStrip1.Size = New System.Drawing.Size(784, 39)
         Me.ToolStrip1.TabIndex = 10
         Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator8
+        '
+        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 39)
+        '
+        'WebView21
+        '
+        Me.WebView21.AllowExternalDrop = True
+        Me.WebView21.CreationProperties = Nothing
+        Me.WebView21.DefaultBackgroundColor = System.Drawing.Color.White
+        Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebView21.Location = New System.Drawing.Point(0, 39)
+        Me.WebView21.Name = "WebView21"
+        Me.WebView21.Size = New System.Drawing.Size(784, 422)
+        Me.WebView21.Source = New System.Uri("https://vtubers.me/", System.UriKind.Absolute)
+        Me.WebView21.TabIndex = 11
+        Me.WebView21.ZoomFactor = 1.0R
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
+        'SysTrayIcon
+        '
+        Me.SysTrayIcon.ContextMenuStrip = Me.SysTrayMenu
+        Me.SysTrayIcon.Icon = CType(resources.GetObject("SysTrayIcon.Icon"), System.Drawing.Icon)
+        Me.SysTrayIcon.Text = "VTuber"
+        Me.SysTrayIcon.Visible = True
+        '
+        'SysTrayMenu
+        '
+        Me.SysTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Restore_TMO, Me.ToolStripSeparator4, Me.TweetToolStripMenuItem, Me.SettingsPanelToolStripMenuItem, Me.ToolStripSeparator13, Me.Exit_TMO})
+        Me.SysTrayMenu.Name = "SysTrayMenu"
+        Me.SysTrayMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.SysTrayMenu.Size = New System.Drawing.Size(165, 168)
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(161, 6)
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(161, 6)
         '
         'Back_TSB
         '
@@ -114,11 +170,6 @@ Partial Class VTuberMain
         Me.Refresh_TSB.Name = "Refresh_TSB"
         Me.Refresh_TSB.Size = New System.Drawing.Size(36, 36)
         Me.Refresh_TSB.Text = "Refresh"
-        '
-        'ToolStripSeparator5
-        '
-        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 39)
         '
         'Home_TSB
         '
@@ -214,11 +265,6 @@ Partial Class VTuberMain
         Me.GoToUser_TSM.Text = "Go to user..."
         Me.GoToUser_TSM.ToolTipText = "Go to a specified VTubers.me user's profile."
         '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 39)
-        '
         'Account_TSB
         '
         Me.Account_TSB.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TwitterSettings_TSM, Me.KeyboardShortcutsToolStripMenuItem1, Me.AboutTwitterToolStripMenuItem1, Me.ToolStripSeparator10, Me.LogOutToolStripMenuItem1})
@@ -268,11 +314,6 @@ Partial Class VTuberMain
         Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(181, 22)
         Me.LogOutToolStripMenuItem1.Text = "Log out"
         Me.LogOutToolStripMenuItem1.ToolTipText = "Log out of the current Twitter user."
-        '
-        'ToolStripSeparator8
-        '
-        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 39)
         '
         'Application_TSB
         '
@@ -368,37 +409,6 @@ Partial Class VTuberMain
         Me.Exit_TSM.Text = "Exit"
         Me.Exit_TSM.ToolTipText = "End the application process."
         '
-        'WebView21
-        '
-        Me.WebView21.AllowExternalDrop = True
-        Me.WebView21.CreationProperties = Nothing
-        Me.WebView21.DefaultBackgroundColor = System.Drawing.Color.White
-        Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebView21.Location = New System.Drawing.Point(0, 39)
-        Me.WebView21.Name = "WebView21"
-        Me.WebView21.Size = New System.Drawing.Size(784, 422)
-        Me.WebView21.Source = New System.Uri("https://vtubers.me/", System.UriKind.Absolute)
-        Me.WebView21.TabIndex = 11
-        Me.WebView21.ZoomFactor = 1.0R
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        '
-        'SysTrayIcon
-        '
-        Me.SysTrayIcon.ContextMenuStrip = Me.SysTrayMenu
-        Me.SysTrayIcon.Icon = CType(resources.GetObject("SysTrayIcon.Icon"), System.Drawing.Icon)
-        Me.SysTrayIcon.Text = "VTuber"
-        Me.SysTrayIcon.Visible = True
-        '
-        'SysTrayMenu
-        '
-        Me.SysTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Restore_TMO, Me.ToolStripSeparator4, Me.TweetToolStripMenuItem, Me.SettingsPanelToolStripMenuItem, Me.ToolStripSeparator13, Me.Exit_TMO})
-        Me.SysTrayMenu.Name = "SysTrayMenu"
-        Me.SysTrayMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.SysTrayMenu.Size = New System.Drawing.Size(165, 168)
-        '
         'Restore_TMO
         '
         Me.Restore_TMO.Image = Global.VTuber.My.Resources.Resources.Restore
@@ -406,11 +416,6 @@ Partial Class VTuberMain
         Me.Restore_TMO.Name = "Restore_TMO"
         Me.Restore_TMO.Size = New System.Drawing.Size(164, 38)
         Me.Restore_TMO.Text = "Restore"
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(161, 6)
         '
         'TweetToolStripMenuItem
         '
@@ -429,11 +434,6 @@ Partial Class VTuberMain
         Me.SettingsPanelToolStripMenuItem.Name = "SettingsPanelToolStripMenuItem"
         Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(164, 38)
         Me.SettingsPanelToolStripMenuItem.Text = "Settings Panel"
-        '
-        'ToolStripSeparator13
-        '
-        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
-        Me.ToolStripSeparator13.Size = New System.Drawing.Size(161, 6)
         '
         'Exit_TMO
         '

@@ -49,7 +49,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>vtubers.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\vtubers.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1661.34, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
@@ -188,6 +188,8 @@
     <None Include="Resources\Twitter Compose.ico" />
     <None Include="Resources\Settings.ico" />
     <None Include="Resources\Exit.ico" />
+    <None Include="Resources\vtubers.ico" />
+    <None Include="Resources\vtubers_notif.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

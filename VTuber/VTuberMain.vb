@@ -83,6 +83,15 @@ Public Class VTuberMain
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.Text = WebView21.CoreWebView2.DocumentTitle & " - VTubers.me"
+
+        If Me.Text.Contains("1") Then
+            Me.Icon = My.Resources.vtubers_notif
+            Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
+        ElseIf WebView21.CoreWebView2.Source.ToString = "https://vtubers.me/notifications" Then
+            Me.Icon = My.Resources.vtubers
+            Me.SysTrayIcon.Icon = My.Resources.vtubers
+        End If
+
         Try
             If WebView21.CoreWebView2.DocumentTitle.Length > 25 Then
                 Dim source As String = WebView21.CoreWebView2.DocumentTitle
