@@ -48,6 +48,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>vtubers.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1661.34, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1661.34\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
@@ -83,6 +86,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Variables.vb" />
     <Compile Include="VTuberMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +133,48 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Social.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewWindow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToUser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mention.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Analytics.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1661.34\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1661.34\build\Microsoft.Web.WebView2.targets')" />
