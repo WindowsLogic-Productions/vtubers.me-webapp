@@ -55,6 +55,14 @@
     Private Sub LogOutToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem1.Click
         WebView21.CoreWebView2.Navigate("https://vtubers.me/logout")
     End Sub
+
+    Private Sub SendFeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SendFeedbackToolStripMenuItem.Click
+        Process.Start("https://windowslogic.co.uk/feedback.php")
+    End Sub
+
+    Private Sub Exit_TSM_Click(sender As Object, e As EventArgs) Handles Exit_TSM.Click
+        End
+    End Sub
 #End Region
 #Region "Tool Bar"
 
