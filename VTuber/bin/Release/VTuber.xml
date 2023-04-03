@@ -22,6 +22,11 @@ VTuber
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources._Exit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Analytics">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -77,7 +82,17 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Restore">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Settings">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -85,6 +100,21 @@ VTuber
 <member name="P:VTuber.My.Resources.Resources.Social">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Twitter_Compose">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.vtubers">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.vtubers_notif">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
 </summary>
 </member>
 </members>

@@ -159,6 +159,10 @@ Public Class VTuberMain
             Me.SysTrayIcon.Icon = My.Resources.vtubers
         End If
     End Sub
+
+    Private Sub WhatsNew_TSM_Click(sender As Object, e As EventArgs) Handles WhatsNew_TSM.Click
+        VTuberWhatsNew.ShowDialog()
+    End Sub
 #End Region
 
 End Class

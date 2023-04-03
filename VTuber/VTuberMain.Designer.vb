@@ -289,7 +289,7 @@ Partial Class VTuberMain
         'NewWindowToolStripMenuItem
         '
         Me.NewWindowToolStripMenuItem.Name = "NewWindowToolStripMenuItem"
-        Me.NewWindowToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.NewWindowToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NewWindowToolStripMenuItem.Text = "New window"
         Me.NewWindowToolStripMenuItem.ToolTipText = "Open a new window."
         '
@@ -298,30 +298,29 @@ Partial Class VTuberMain
         Me.SettingsPanel_TSM.Enabled = False
         Me.SettingsPanel_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanel_TSM.Name = "SettingsPanel_TSM"
-        Me.SettingsPanel_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.SettingsPanel_TSM.Size = New System.Drawing.Size(180, 22)
         Me.SettingsPanel_TSM.Text = "Settings Panel"
         Me.SettingsPanel_TSM.ToolTipText = "Customise the settings of Tweeter."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(176, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'CheckForUpdates_TSM
         '
         Me.CheckForUpdates_TSM.Enabled = False
         Me.CheckForUpdates_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CheckForUpdates_TSM.Name = "CheckForUpdates_TSM"
-        Me.CheckForUpdates_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.CheckForUpdates_TSM.Size = New System.Drawing.Size(180, 22)
         Me.CheckForUpdates_TSM.Text = "Check for updates..."
         Me.CheckForUpdates_TSM.ToolTipText = "Check if you have the latest version."
         '
         'WhatsNew_TSM
         '
-        Me.WhatsNew_TSM.Enabled = False
         Me.WhatsNew_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.WhatsNew_TSM.Name = "WhatsNew_TSM"
-        Me.WhatsNew_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.WhatsNew_TSM.Size = New System.Drawing.Size(180, 22)
         Me.WhatsNew_TSM.Text = "What's new?"
         Me.WhatsNew_TSM.ToolTipText = "See what's changed."
         '
@@ -329,21 +328,21 @@ Partial Class VTuberMain
         '
         Me.SendFeedbackToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SendFeedbackToolStripMenuItem.Name = "SendFeedbackToolStripMenuItem"
-        Me.SendFeedbackToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.SendFeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SendFeedbackToolStripMenuItem.Text = "Send feedback..."
         Me.SendFeedbackToolStripMenuItem.ToolTipText = "Tell us what you think."
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(176, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'Help_TSM
         '
         Me.Help_TSM.Enabled = False
         Me.Help_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Help_TSM.Name = "Help_TSM"
-        Me.Help_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.Help_TSM.Size = New System.Drawing.Size(180, 22)
         Me.Help_TSM.Text = "Help"
         Me.Help_TSM.ToolTipText = "Open the Tweeter help documentation."
         '
@@ -351,21 +350,21 @@ Partial Class VTuberMain
         '
         Me.About_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.About_TSM.Name = "About_TSM"
-        Me.About_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.About_TSM.Size = New System.Drawing.Size(180, 22)
         Me.About_TSM.Text = "About VTuber"
         Me.About_TSM.ToolTipText = "View legal information about Tweeter."
         '
         'ToolStripSeparator9
         '
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(176, 6)
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(177, 6)
         '
         'Exit_TSM
         '
         Me.Exit_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Exit_TSM.Name = "Exit_TSM"
         Me.Exit_TSM.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.Exit_TSM.Size = New System.Drawing.Size(179, 22)
+        Me.Exit_TSM.Size = New System.Drawing.Size(180, 22)
         Me.Exit_TSM.Text = "Exit"
         Me.Exit_TSM.ToolTipText = "End the application process."
         '
