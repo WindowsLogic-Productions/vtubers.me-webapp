@@ -19,3 +19,5 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.vbproj.CopyComplete
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.exe
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.xml
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.pdb
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.vbprojAssemblyReference.cache
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberFeedback.resources

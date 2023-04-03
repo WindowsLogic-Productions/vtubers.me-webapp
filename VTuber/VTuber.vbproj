@@ -86,7 +86,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CefKeyboardHandler.vb" />
     <Compile Include="Variables.vb" />
+    <Compile Include="VTuberFeedback.Designer.vb">
+      <DependentUpon>VTuberFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VTuberFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTuberMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="VTuberFeedback.resx">
+      <DependentUpon>VTuberFeedback.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VTuberMain.resx">
       <DependentUpon>VTuberMain.vb</DependentUpon>
     </EmbeddedResource>

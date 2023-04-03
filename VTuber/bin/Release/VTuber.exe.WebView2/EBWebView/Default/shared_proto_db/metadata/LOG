@@ -1,2 +1,3 @@
-2023/04/03-11:56:54.805 45ac Creating DB J:\Projects\vtubers.me-webapp\VTuber\bin\Release\VTuber.exe.WebView2\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2023/04/03-11:56:54.813 45ac Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Release\VTuber.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/04/03-13:32:29.626 374c Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Release\VTuber.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/04/03-13:32:29.626 374c Recovering log #3
+2023/04/03-13:32:29.626 374c Reusing old log J:\Projects\vtubers.me-webapp\VTuber\bin\Release\VTuber.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/000003.log 

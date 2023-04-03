@@ -1,15 +1,24 @@
-﻿Public Class VTuberMain
+﻿Imports Microsoft.Web.WebView2.Core
+
+Public Class VTuberMain
 #Region "Load Settings"
     Private Sub VTuberMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Variables.Update_Settings()
-    End Sub
 
+
+    End Sub
+#End Region
+#Region "Tool Bar"
     Private Sub Back_TSB_Click(sender As Object, e As EventArgs) Handles Back_TSB.Click
-        WebView21.GoBack()
+        If WebView21.CanGoBack() Then
+            WebView21.GoBack()
+        End If
     End Sub
 
     Private Sub Forward_TSB_Click(sender As Object, e As EventArgs) Handles Forward_TSB.Click
-        WebView21.GoForward()
+        If WebView21.CanGoForward() Then
+            WebView21.GoForward()
+        End If
     End Sub
 
     Private Sub Refresh_TSB_Click(sender As Object, e As EventArgs) Handles Refresh_TSB.Click
@@ -57,14 +66,33 @@
     End Sub
 
     Private Sub SendFeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SendFeedbackToolStripMenuItem.Click
-        Process.Start("https://windowslogic.co.uk/feedback.php")
+        VTuberFeedback.ShowDialog()
     End Sub
 
     Private Sub Exit_TSM_Click(sender As Object, e As EventArgs) Handles Exit_TSM.Click
         End
     End Sub
-#End Region
-#Region "Tool Bar"
+
+    Private Sub NewWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewWindowToolStripMenuItem.Click
+        Dim newwindow As New VTuberMain
+        newwindow.Show()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Me.Text = WebView21.CoreWebView2.DocumentTitle & " - VTubers.me"
+        Try
+            If WebView21.CoreWebView2.DocumentTitle.Length > 25 Then
+                Dim source As String = WebView21.CoreWebView2.DocumentTitle
+                Dim cutdown As String = source.Substring(0, 25)
+                'SysTrayIcon.Text = "Tweeter - " & cutdown & "..."
+            Else
+                Dim source As String = WebView21.CoreWebView2.DocumentTitle
+                'SysTrayIcon.Text = "Tweeter - " & source
+            End If
+        Catch ex As Exception
+            MsgBox("Could not update system tray icon text.", MsgBoxStyle.Critical, "Error")
+        End Try
+    End Sub
 
 #End Region
 
