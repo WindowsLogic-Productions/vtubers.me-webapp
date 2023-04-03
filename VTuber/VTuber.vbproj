@@ -184,6 +184,10 @@
     <None Include="Resources\Analytics.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Restore.ico" />
+    <None Include="Resources\Twitter Compose.ico" />
+    <None Include="Resources\Settings.ico" />
+    <None Include="Resources\Exit.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -40,3 +40,4 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.exe
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.xml
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.pdb
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberFeedback.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbprojAssemblyReference.cache

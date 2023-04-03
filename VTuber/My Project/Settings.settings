@@ -5,5 +5,8 @@
     <Setting Name="Updates" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="SysTrayMinimise" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

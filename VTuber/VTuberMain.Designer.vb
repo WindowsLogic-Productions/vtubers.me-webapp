@@ -60,8 +60,17 @@ Partial Class VTuberMain
         Me.Exit_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SysTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.SysTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Restore_TMO = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TweetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Exit_TMO = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SysTrayMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -376,6 +385,64 @@ Partial Class VTuberMain
         '
         Me.Timer1.Enabled = True
         '
+        'SysTrayIcon
+        '
+        Me.SysTrayIcon.ContextMenuStrip = Me.SysTrayMenu
+        Me.SysTrayIcon.Icon = CType(resources.GetObject("SysTrayIcon.Icon"), System.Drawing.Icon)
+        Me.SysTrayIcon.Text = "VTuber"
+        Me.SysTrayIcon.Visible = True
+        '
+        'SysTrayMenu
+        '
+        Me.SysTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Restore_TMO, Me.ToolStripSeparator4, Me.TweetToolStripMenuItem, Me.SettingsPanelToolStripMenuItem, Me.ToolStripSeparator13, Me.Exit_TMO})
+        Me.SysTrayMenu.Name = "SysTrayMenu"
+        Me.SysTrayMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.SysTrayMenu.Size = New System.Drawing.Size(165, 168)
+        '
+        'Restore_TMO
+        '
+        Me.Restore_TMO.Image = Global.VTuber.My.Resources.Resources.Restore
+        Me.Restore_TMO.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.Restore_TMO.Name = "Restore_TMO"
+        Me.Restore_TMO.Size = New System.Drawing.Size(164, 38)
+        Me.Restore_TMO.Text = "Restore"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(161, 6)
+        '
+        'TweetToolStripMenuItem
+        '
+        Me.TweetToolStripMenuItem.Enabled = False
+        Me.TweetToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.Twitter_Compose
+        Me.TweetToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.TweetToolStripMenuItem.Name = "TweetToolStripMenuItem"
+        Me.TweetToolStripMenuItem.Size = New System.Drawing.Size(164, 38)
+        Me.TweetToolStripMenuItem.Text = "Post"
+        '
+        'SettingsPanelToolStripMenuItem
+        '
+        Me.SettingsPanelToolStripMenuItem.Enabled = False
+        Me.SettingsPanelToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.Settings
+        Me.SettingsPanelToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SettingsPanelToolStripMenuItem.Name = "SettingsPanelToolStripMenuItem"
+        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(164, 38)
+        Me.SettingsPanelToolStripMenuItem.Text = "Settings Panel"
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(161, 6)
+        '
+        'Exit_TMO
+        '
+        Me.Exit_TMO.Image = Global.VTuber.My.Resources.Resources._Exit
+        Me.Exit_TMO.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.Exit_TMO.Name = "Exit_TMO"
+        Me.Exit_TMO.Size = New System.Drawing.Size(164, 38)
+        Me.Exit_TMO.Text = "Exit"
+        '
         'VTuberMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -392,6 +459,7 @@ Partial Class VTuberMain
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SysTrayMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -432,4 +500,12 @@ Partial Class VTuberMain
     Friend WithEvents NewWindowToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WebView21 As Microsoft.Web.WebView2.WinForms.WebView2
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents SysTrayIcon As NotifyIcon
+    Friend WithEvents SysTrayMenu As ContextMenuStrip
+    Friend WithEvents Restore_TMO As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents TweetToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SettingsPanelToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator13 As ToolStripSeparator
+    Friend WithEvents Exit_TMO As ToolStripMenuItem
 End Class

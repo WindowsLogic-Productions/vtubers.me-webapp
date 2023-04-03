@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Notification.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Restore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Forward.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,34 +127,46 @@
   <data name="GoToUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoToUser.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mail.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="More" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\More.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NewWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewWindow.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Refresh.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Social" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Social.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Notification.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Analytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Analytics.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mail.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="More" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\More.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitter Compose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twitter Compose.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewWindow.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Social" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Social.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mention" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mention.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Analytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Analytics.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -5,6 +5,9 @@ Public Class VTuberMain
     Private Sub VTuberMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Variables.Update_Settings()
 
+        Me.KeyPreview = True
+
+
 
     End Sub
 #End Region
@@ -84,10 +87,10 @@ Public Class VTuberMain
             If WebView21.CoreWebView2.DocumentTitle.Length > 25 Then
                 Dim source As String = WebView21.CoreWebView2.DocumentTitle
                 Dim cutdown As String = source.Substring(0, 25)
-                'SysTrayIcon.Text = "Tweeter - " & cutdown & "..."
+                SysTrayIcon.Text = "VTubers.me - " & cutdown & "..."
             Else
                 Dim source As String = WebView21.CoreWebView2.DocumentTitle
-                'SysTrayIcon.Text = "Tweeter - " & source
+                SysTrayIcon.Text = "VTubers.me - " & source
             End If
         Catch ex As Exception
             MsgBox("Could not update system tray icon text.", MsgBoxStyle.Critical, "Error")
@@ -95,6 +98,47 @@ Public Class VTuberMain
     End Sub
 
 #End Region
+#Region "System Tray Icon"
+    Private Sub SysTrayIcon_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles SysTrayIcon.MouseDoubleClick
+        Try
+            Me.Visible = True
+            Me.WindowState = FormWindowState.Normal
+            SysTrayIcon.Visible = True
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 
+    Private Sub TweeterMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If My.Settings.SysTrayMinimise = 0 Then
+            If WindowState = FormWindowState.Minimized Then
+                Me.Visible = False
+                SysTrayIcon.Visible = True
+                SysTrayIcon.ShowBalloonTip(1, "VTubers.me Web App - Notification", "VTubers.me Web App is now running in the background.", ToolTipIcon.Info)
+                GC.Collect()
+            End If
+        ElseIf My.Settings.SysTrayMinimise = 1 Then
+            GC.Collect()
+        End If
+    End Sub
+
+    Private Sub RestoreToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Restore_TMO.Click
+        Try
+            Me.Visible = True
+            Me.WindowState = FormWindowState.Normal
+            SysTrayIcon.Visible = True
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub ExitToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles Exit_TMO.Click
+        Me.Close()
+    End Sub
+
+    Private Sub TweetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TweetToolStripMenuItem.Click
+        WebView21.CoreWebView2.Navigate("https://vtubers.me/post")
+    End Sub
+#End Region
 
 End Class
