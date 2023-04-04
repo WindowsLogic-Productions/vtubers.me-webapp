@@ -63,14 +63,6 @@ Partial Class SettingsPanelGeneral
         Me.WidgetText = New System.Windows.Forms.TextBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.UpdateBox = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.EnableUpdates = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DisableUpdates = New System.Windows.Forms.RadioButton()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -89,10 +81,6 @@ Partial Class SettingsPanelGeneral
         Me.TabPage5.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
-        Me.UpdateBox.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -134,7 +122,6 @@ Partial Class SettingsPanelGeneral
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Location = New System.Drawing.Point(12, 59)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -516,94 +503,6 @@ Partial Class SettingsPanelGeneral
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Choose a hashtag or type a URL to open so you can share it on" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "stream."
         '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.UpdateBox)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(409, 179)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Updates"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'UpdateBox
-        '
-        Me.UpdateBox.Controls.Add(Me.PictureBox1)
-        Me.UpdateBox.Controls.Add(Me.PictureBox2)
-        Me.UpdateBox.Controls.Add(Me.EnableUpdates)
-        Me.UpdateBox.Controls.Add(Me.Label1)
-        Me.UpdateBox.Controls.Add(Me.DisableUpdates)
-        Me.UpdateBox.Controls.Add(Me.Label2)
-        Me.UpdateBox.Location = New System.Drawing.Point(6, 6)
-        Me.UpdateBox.Name = "UpdateBox"
-        Me.UpdateBox.Size = New System.Drawing.Size(376, 98)
-        Me.UpdateBox.TabIndex = 14
-        Me.UpdateBox.TabStop = False
-        Me.UpdateBox.Text = "Update Settings"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Location = New System.Drawing.Point(6, 59)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
-        '
-        'EnableUpdates
-        '
-        Me.EnableUpdates.AutoSize = True
-        Me.EnableUpdates.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.EnableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.EnableUpdates.Location = New System.Drawing.Point(44, 21)
-        Me.EnableUpdates.Name = "EnableUpdates"
-        Me.EnableUpdates.Size = New System.Drawing.Size(165, 18)
-        Me.EnableUpdates.TabIndex = 1
-        Me.EnableUpdates.Text = "Enable automatic updates"
-        Me.EnableUpdates.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(41, 40)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 13)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Check for updates when starting."
-        '
-        'DisableUpdates
-        '
-        Me.DisableUpdates.AutoSize = True
-        Me.DisableUpdates.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.DisableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.DisableUpdates.Location = New System.Drawing.Point(44, 59)
-        Me.DisableUpdates.Name = "DisableUpdates"
-        Me.DisableUpdates.Size = New System.Drawing.Size(168, 18)
-        Me.DisableUpdates.TabIndex = 2
-        Me.DisableUpdates.Text = "Disable automatic updates"
-        Me.DisableUpdates.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(41, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(141, 13)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Do not check for updates."
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -654,11 +553,6 @@ Partial Class SettingsPanelGeneral
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage2.ResumeLayout(False)
-        Me.UpdateBox.ResumeLayout(False)
-        Me.UpdateBox.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -679,14 +573,6 @@ Partial Class SettingsPanelGeneral
     Friend WithEvents SystemTrayButton As RadioButton
     Friend WithEvents NothingButton As RadioButton
     Friend WithEvents Label6 As Label
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents UpdateBox As GroupBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents EnableUpdates As RadioButton
-    Friend WithEvents Label1 As Label
-    Friend WithEvents DisableUpdates As RadioButton
-    Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents FullScreenBox As CheckBox
