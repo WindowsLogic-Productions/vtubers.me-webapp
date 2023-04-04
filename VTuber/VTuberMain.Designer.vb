@@ -69,6 +69,7 @@ Partial Class VTuberMain
         Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_TMO = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SysTrayMenu.SuspendLayout()
@@ -176,11 +177,10 @@ Partial Class VTuberMain
         'Profile_TSM
         '
         Me.Profile_TSM.BackColor = System.Drawing.SystemColors.Control
-        Me.Profile_TSM.Enabled = False
         Me.Profile_TSM.Image = Global.VTuber.My.Resources.Resources.Social
         Me.Profile_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Profile_TSM.Name = "Profile_TSM"
-        Me.Profile_TSM.Size = New System.Drawing.Size(153, 38)
+        Me.Profile_TSM.Size = New System.Drawing.Size(196, 38)
         Me.Profile_TSM.Text = "Profile"
         Me.Profile_TSM.ToolTipText = "Go to your VTubers.me profile."
         '
@@ -238,7 +238,7 @@ Partial Class VTuberMain
         Me.TwitterSettings_TSM.Size = New System.Drawing.Size(181, 22)
         Me.TwitterSettings_TSM.Text = "VTubers.me settings"
         Me.TwitterSettings_TSM.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.TwitterSettings_TSM.ToolTipText = "View and manage your Twitter settings."
+        Me.TwitterSettings_TSM.ToolTipText = "View and manage your Vtubers.me settings."
         '
         'KeyboardShortcutsToolStripMenuItem1
         '
@@ -295,7 +295,6 @@ Partial Class VTuberMain
         '
         'SettingsPanel_TSM
         '
-        Me.SettingsPanel_TSM.Enabled = False
         Me.SettingsPanel_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanel_TSM.Name = "SettingsPanel_TSM"
         Me.SettingsPanel_TSM.Size = New System.Drawing.Size(180, 22)
@@ -448,17 +447,28 @@ Partial Class VTuberMain
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 30000
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(709, 10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
+        '
         'VTuberMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.WebView21)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.MinimumSize = New System.Drawing.Size(800, 500)
+        Me.MinimumSize = New System.Drawing.Size(350, 400)
         Me.Name = "VTuberMain"
         Me.Text = "VTuber"
         Me.ToolStrip1.ResumeLayout(False)
@@ -514,4 +524,5 @@ Partial Class VTuberMain
     Friend WithEvents ToolStripSeparator13 As ToolStripSeparator
     Friend WithEvents Exit_TMO As ToolStripMenuItem
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents Button1 As Button
 End Class

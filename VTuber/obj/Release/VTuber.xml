@@ -42,6 +42,11 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Fullscreen">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.GoToUser">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -62,6 +67,11 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Minimise">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.More">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -73,6 +83,11 @@ VTuber
 </summary>
 </member>
 <member name="P:VTuber.My.Resources.Resources.Notification">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Personalisation">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -102,7 +117,17 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Start_up">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Twitter_Compose">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Update">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -115,6 +140,16 @@ VTuber
 <member name="P:VTuber.My.Resources.Resources.vtubers_notif">
 <summary>
   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.vtubers_tv_text_logo_2022p">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.vtubers1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 </members>

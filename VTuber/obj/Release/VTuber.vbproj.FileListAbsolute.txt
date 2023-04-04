@@ -22,3 +22,6 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.pdb
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.vbprojAssemblyReference.cache
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberFeedback.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberWhatsNew.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanel.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanelGeneral.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberWidget.resources

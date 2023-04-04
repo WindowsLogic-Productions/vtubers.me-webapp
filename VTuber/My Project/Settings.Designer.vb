@@ -77,6 +77,54 @@ Namespace My
                 Me("SysTrayMinimise") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Startup() As String
+            Get
+                Return CType(Me("Startup"),String)
+            End Get
+            Set
+                Me("Startup") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property OCA() As String
+            Get
+                Return CType(Me("OCA"),String)
+            End Get
+            Set
+                Me("OCA") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property ProfileName() As String
+            Get
+                Return CType(Me("ProfileName"),String)
+            End Get
+            Set
+                Me("ProfileName") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Fullscreen() As String
+            Get
+                Return CType(Me("Fullscreen"),String)
+            End Get
+            Set
+                Me("Fullscreen") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

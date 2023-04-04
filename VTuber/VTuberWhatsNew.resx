@@ -118,7 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label2.Text" xml:space="preserve">
-    <value>~Version 0.2.0.0~
+    <value>~Version 0.5.0.0~ (We're in Beta!)
+1. Added Settings Panel.
+2. Added ability to set whether to minimise to system tray or to taskbar.
+3. Added ability to make the application full screen.
+4. Added ability to change how the application starts.
+5. Added ability to start an OBS Widget for streams.
+6. Added ability to set profile for native access.
+7. Fixed a bug where notification toasts wouldn't show if you had more than one pending
+notification.
+
+~Version 0.2.0.0~
 1. Added New Window option.
 2. Title now shows where you are on the website.
 3. Added system tray icon and menu.

@@ -49,7 +49,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\vtubers.ico</ApplicationIcon>
+    <ApplicationIcon>vtubers.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1661.34, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
@@ -86,7 +86,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CefKeyboardHandler.vb" />
+    <Compile Include="SettingsPanel.Designer.vb">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsPanelGeneral.Designer.vb">
+      <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanelGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Variables.vb" />
     <Compile Include="VTuberFeedback.Designer.vb">
       <DependentUpon>VTuberFeedback.vb</DependentUpon>
@@ -122,8 +133,20 @@
     <Compile Include="VTuberWhatsNew.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VTuberWidget.Designer.vb">
+      <DependentUpon>VTuberWidget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VTuberWidget.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SettingsPanel.resx">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPanelGeneral.resx">
+      <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VTuberFeedback.resx">
       <DependentUpon>VTuberFeedback.vb</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VTuberWhatsNew.resx">
       <DependentUpon>VTuberWhatsNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTuberWidget.resx">
+      <DependentUpon>VTuberWidget.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -197,8 +223,15 @@
     <None Include="Resources\Twitter Compose.ico" />
     <None Include="Resources\Settings.ico" />
     <None Include="Resources\Exit.ico" />
-    <None Include="Resources\vtubers.ico" />
     <None Include="Resources\vtubers_notif.ico" />
+    <None Include="Resources\vtubers_tv_text_logo_2022p.png" />
+    <None Include="Resources\vtubers1.ico" />
+    <None Include="Resources\Personalisation.ico" />
+    <None Include="Resources\Update.ico" />
+    <None Include="Resources\Minimise.ico" />
+    <None Include="Resources\Start-up.ico" />
+    <None Include="Resources\Fullscreen.ico" />
+    <None Include="Resources\vtubers.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

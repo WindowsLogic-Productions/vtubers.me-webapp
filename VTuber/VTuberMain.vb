@@ -3,11 +3,35 @@
 Public Class VTuberMain
 #Region "Load Settings"
     Private Sub VTuberMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Variables.Update_Settings()
 
         Me.KeyPreview = True
 
+        'Remove this after next version
 
+        If My.Settings.ProfileName.Contains("") Then
+            Profile_TSM.Enabled = False
+        Else
+            Profile_TSM.Enabled = True
+        End If
+
+        'Load update settings.
+        Variables.Update_Settings()
+
+        'Load start-up settings.
+        If My.Settings.Startup = 0 Then
+
+        End If
+
+        If My.Settings.Startup = 1 Then
+            WindowState = FormWindowState.Minimized
+            Me.Visible = False
+            SysTrayIcon.Visible = True
+            SysTrayIcon.ShowBalloonTip(1, "Amino For Desktop - Notification", "Amino For Desktop is now running in the background.", ToolTipIcon.Info)
+        End If
+
+        If My.Settings.Startup = 2 Then
+            SettingsPanel.Show()
+        End If
 
     End Sub
 #End Region
@@ -41,7 +65,7 @@ Public Class VTuberMain
     End Sub
 
     Private Sub ExploreToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExploreToolStripMenuItem.Click
-        WebView21.CoreWebView2.Navigate("https://vtubers.me/explore")
+        WebView21.CoreWebView2.Navigate("https://vtubers.me/search")
     End Sub
 
     Private Sub Lists_TSM_Click(sender As Object, e As EventArgs) Handles Lists_TSM.Click
@@ -84,7 +108,7 @@ Public Class VTuberMain
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.Text = WebView21.CoreWebView2.DocumentTitle & " - VTubers.me"
 
-        If Me.Text.Contains("1") Then
+        If Me.Text.Contains("1" Or "2" Or "3" Or "4" Or "5" Or "6" Or "7" Or "8" Or "9" Or "10") Then
             Me.Icon = My.Resources.vtubers_notif
             Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
         ElseIf WebView21.CoreWebView2.Source.ToString = "https://vtubers.me/notifications" Then
@@ -119,14 +143,14 @@ Public Class VTuberMain
     End Sub
 
     Private Sub TweeterMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        If My.Settings.SysTrayMinimise = 0 Then
+        If My.Settings.SysTrayMinimise = 1 Then
             If WindowState = FormWindowState.Minimized Then
                 Me.Visible = False
                 SysTrayIcon.Visible = True
                 SysTrayIcon.ShowBalloonTip(1, "VTubers.me Web App - Notification", "VTubers.me Web App is now running in the background.", ToolTipIcon.Info)
                 GC.Collect()
             End If
-        ElseIf My.Settings.SysTrayMinimise = 1 Then
+        ElseIf My.Settings.SysTrayMinimise = 0 Then
             GC.Collect()
         End If
     End Sub
@@ -162,6 +186,18 @@ Public Class VTuberMain
 
     Private Sub WhatsNew_TSM_Click(sender As Object, e As EventArgs) Handles WhatsNew_TSM.Click
         VTuberWhatsNew.ShowDialog()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        VTuberWidget.Show()
+    End Sub
+
+    Private Sub SettingsPanel_TSM_Click(sender As Object, e As EventArgs) Handles SettingsPanel_TSM.Click
+        SettingsPanel.Show()
+    End Sub
+
+    Private Sub Profile_TSM_Click(sender As Object, e As EventArgs) Handles Profile_TSM.Click
+        WebView21.CoreWebView2.Navigate("https://vtubers.me/" & My.Settings.ProfileName)
     End Sub
 #End Region
 
