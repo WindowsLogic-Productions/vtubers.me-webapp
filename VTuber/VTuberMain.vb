@@ -26,7 +26,7 @@ Public Class VTuberMain
             WindowState = FormWindowState.Minimized
             Me.Visible = False
             SysTrayIcon.Visible = True
-            SysTrayIcon.ShowBalloonTip(1, "Amino For Desktop - Notification", "Amino For Desktop is now running in the background.", ToolTipIcon.Info)
+            SysTrayIcon.ShowBalloonTip(1, "VTubers.me Web App - Notification", "VTubers.me Web App is now running in the background.", ToolTipIcon.Info)
         End If
 
         If My.Settings.Startup = 2 Then
