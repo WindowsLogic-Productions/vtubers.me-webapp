@@ -86,6 +86,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SettingsPanelUpdates.Designer.vb">
+      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanelUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SettingsPanel.Designer.vb">
       <DependentUpon>SettingsPanel.vb</DependentUpon>
     </Compile>
@@ -96,6 +102,18 @@
       <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
     </Compile>
     <Compile Include="SettingsPanelGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsPanelPersonalise.Designer.vb">
+      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanelPersonalise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdaterPrompt.Designer.vb">
+      <DependentUpon>UpdaterPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdaterPrompt.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Variables.vb" />
@@ -141,11 +159,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SettingsPanelUpdates.resx">
+      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SettingsPanel.resx">
       <DependentUpon>SettingsPanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsPanelGeneral.resx">
       <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPanelPersonalise.resx">
+      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdaterPrompt.resx">
+      <DependentUpon>UpdaterPrompt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VTuberFeedback.resx">
       <DependentUpon>VTuberFeedback.vb</DependentUpon>
@@ -232,6 +259,14 @@
     <None Include="Resources\Start-up.ico" />
     <None Include="Resources\Fullscreen.ico" />
     <None Include="Resources\vtubers.ico" />
+    <None Include="Resources\WLPBackground.png" />
+    <None Include="Resources\Colours.ico" />
+    <None Include="Resources\GoodGradient.png" />
+    <None Include="Resources\Updates On.ico" />
+    <None Include="Resources\Updates Off.ico" />
+    <None Include="Resources\BadGradient.png" />
+    <None Include="Resources\WarningGradient.png" />
+    <None Include="Resources\Updates New.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

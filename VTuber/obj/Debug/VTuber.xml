@@ -37,12 +37,27 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.BadGradient">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Colours">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Forward">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:VTuber.My.Resources.Resources.Fullscreen">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.GoodGradient">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -132,6 +147,21 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Updates_New">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Updates_Off">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Updates_On">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.vtubers">
 <summary>
   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
@@ -148,6 +178,16 @@ VTuber
 </summary>
 </member>
 <member name="P:VTuber.My.Resources.Resources.vtubers1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.WarningGradient">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.WLPBackground">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

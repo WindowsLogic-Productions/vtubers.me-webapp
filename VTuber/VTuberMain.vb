@@ -6,12 +6,24 @@ Public Class VTuberMain
 
         Me.KeyPreview = True
 
-        'Remove this after next version
+        'Background settings.
+        If My.Settings.DHBHUC = 0 Then
+            HubBackground.Image = My.Resources.WLPBackground
+        End If
 
-        If My.Settings.ProfileName.Contains("") Then
-            Profile_TSM.Enabled = False
-        Else
-            Profile_TSM.Enabled = True
+        If My.Settings.DHBHUC = 1 Then
+            HubBackground.Image = Nothing
+        End If
+
+        If My.Settings.DHBHUC = 2 Then
+            HubBackground.Load(My.Settings.CB1)
+        End If
+
+        'Load colour settings.
+        ToolStrip1.BackColor = Color.FromArgb(200, Color.White)
+
+        If My.Settings.CCE = 1 Then
+            Panel1.BackColor = My.Settings.CustomColour
         End If
 
         'Load update settings.
@@ -32,6 +44,10 @@ Public Class VTuberMain
         If My.Settings.Startup = 2 Then
             SettingsPanel.Show()
         End If
+
+        'Load parent settings.
+        ToolStrip1.Parent = HubBackground
+        WebView21.Parent = HubBackground
 
     End Sub
 #End Region
@@ -111,7 +127,7 @@ Public Class VTuberMain
         If Me.Text.Contains("1" Or "2" Or "3" Or "4" Or "5" Or "6" Or "7" Or "8" Or "9" Or "10") Then
             Me.Icon = My.Resources.vtubers_notif
             Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
-        ElseIf WebView21.CoreWebView2.Source.ToString = "https://vtubers.me/notifications" Then
+        ElseIf WebView21.CoreWebView2.Source = "https://vtubers.me/notifications" Then
             Me.Icon = My.Resources.vtubers
             Me.SysTrayIcon.Icon = My.Resources.vtubers
         End If
@@ -188,7 +204,7 @@ Public Class VTuberMain
         VTuberWhatsNew.ShowDialog()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         VTuberWidget.Show()
     End Sub
 

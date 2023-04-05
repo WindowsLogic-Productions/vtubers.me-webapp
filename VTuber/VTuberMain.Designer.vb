@@ -69,10 +69,13 @@ Partial Class VTuberMain
         Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_TMO = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.HubBackground = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SysTrayMenu.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.HubBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -180,7 +183,7 @@ Partial Class VTuberMain
         Me.Profile_TSM.Image = Global.VTuber.My.Resources.Resources.Social
         Me.Profile_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Profile_TSM.Name = "Profile_TSM"
-        Me.Profile_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.Profile_TSM.Size = New System.Drawing.Size(153, 38)
         Me.Profile_TSM.Text = "Profile"
         Me.Profile_TSM.ToolTipText = "Go to your VTubers.me profile."
         '
@@ -299,7 +302,7 @@ Partial Class VTuberMain
         Me.SettingsPanel_TSM.Name = "SettingsPanel_TSM"
         Me.SettingsPanel_TSM.Size = New System.Drawing.Size(180, 22)
         Me.SettingsPanel_TSM.Text = "Settings Panel"
-        Me.SettingsPanel_TSM.ToolTipText = "Customise the settings of Tweeter."
+        Me.SettingsPanel_TSM.ToolTipText = "Customise the settings of VTubers.me Web App."
         '
         'ToolStripSeparator1
         '
@@ -370,9 +373,11 @@ Partial Class VTuberMain
         'WebView21
         '
         Me.WebView21.AllowExternalDrop = True
+        Me.WebView21.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.WebView21.CreationProperties = Nothing
         Me.WebView21.DefaultBackgroundColor = System.Drawing.Color.White
-        Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView21.Location = New System.Drawing.Point(0, 39)
         Me.WebView21.Name = "WebView21"
         Me.WebView21.Size = New System.Drawing.Size(784, 422)
@@ -447,24 +452,34 @@ Partial Class VTuberMain
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 30000
         '
-        'Button1
+        'Panel1
         '
-        Me.Button1.Location = New System.Drawing.Point(709, 10)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        Me.Button1.Visible = False
+        Me.Panel1.Controls.Add(Me.WebView21)
+        Me.Panel1.Controls.Add(Me.ToolStrip1)
+        Me.Panel1.Controls.Add(Me.HubBackground)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(784, 461)
+        Me.Panel1.TabIndex = 12
+        '
+        'HubBackground
+        '
+        Me.HubBackground.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HubBackground.Image = Global.VTuber.My.Resources.Resources.WLPBackground
+        Me.HubBackground.Location = New System.Drawing.Point(0, 0)
+        Me.HubBackground.Name = "HubBackground"
+        Me.HubBackground.Size = New System.Drawing.Size(784, 461)
+        Me.HubBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.HubBackground.TabIndex = 0
+        Me.HubBackground.TabStop = False
         '
         'VTuberMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 461)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.WebView21)
-        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
@@ -475,8 +490,10 @@ Partial Class VTuberMain
         Me.ToolStrip1.PerformLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SysTrayMenu.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.HubBackground, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ToolStrip1 As ToolStrip
@@ -524,5 +541,6 @@ Partial Class VTuberMain
     Friend WithEvents ToolStripSeparator13 As ToolStripSeparator
     Friend WithEvents Exit_TMO As ToolStripMenuItem
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents HubBackground As PictureBox
 End Class

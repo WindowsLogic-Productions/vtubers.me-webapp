@@ -71,7 +71,6 @@ Partial Class SettingsPanel
         'PersonaliseSettingsButton
         '
         Me.PersonaliseSettingsButton.BackColor = System.Drawing.Color.Transparent
-        Me.PersonaliseSettingsButton.Enabled = False
         Me.PersonaliseSettingsButton.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PersonaliseSettingsButton.ForeColor = System.Drawing.Color.Black
         Me.PersonaliseSettingsButton.Image = Global.VTuber.My.Resources.Resources.Personalisation

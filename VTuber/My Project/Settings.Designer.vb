@@ -125,6 +125,54 @@ Namespace My
                 Me("Fullscreen") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property CB1() As String
+            Get
+                Return CType(Me("CB1"),String)
+            End Get
+            Set
+                Me("CB1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property DHBHUC() As String
+            Get
+                Return CType(Me("DHBHUC"),String)
+            End Get
+            Set
+                Me("DHBHUC") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property CCE() As String
+            Get
+                Return CType(Me("CCE"),String)
+            End Get
+            Set
+                Me("CCE") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Black")>  _
+        Public Property CustomColour() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("CustomColour"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("CustomColour") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -38,6 +38,7 @@ Partial Class SettingsPanelGeneral
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GPSetLabel = New System.Windows.Forms.Label()
         Me.GPSetButton = New System.Windows.Forms.Button()
@@ -64,7 +65,6 @@ Partial Class SettingsPanelGeneral
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -96,12 +96,13 @@ Partial Class SettingsPanelGeneral
         '
         'BackButton
         '
+        Me.BackButton.FlatAppearance.BorderSize = 0
         Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BackButton.ForeColor = System.Drawing.Color.White
         Me.BackButton.Image = Global.VTuber.My.Resources.Resources.Back
-        Me.BackButton.Location = New System.Drawing.Point(3, 3)
+        Me.BackButton.Location = New System.Drawing.Point(0, 0)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(48, 48)
+        Me.BackButton.Size = New System.Drawing.Size(53, 53)
         Me.BackButton.TabIndex = 15
         Me.ToolTip1.SetToolTip(Me.BackButton, "Back to Settings Panel.")
         Me.BackButton.UseVisualStyleBackColor = True
@@ -235,6 +236,15 @@ Partial Class SettingsPanelGeneral
         Me.TabPage4.TabIndex = 5
         Me.TabPage4.Text = "Profile"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(40, 115)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(297, 13)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "KNOWN  BUG: Profile will not save after closing the app."
         '
         'GroupBox5
         '
@@ -502,15 +512,6 @@ Partial Class SettingsPanelGeneral
         Me.Label8.Size = New System.Drawing.Size(331, 26)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Choose a hashtag or type a URL to open so you can share it on" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "stream."
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(40, 115)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(297, 13)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "KNOWN  BUG: Profile will not save after closing the app."
         '
         'SettingsPanelGeneral
         '

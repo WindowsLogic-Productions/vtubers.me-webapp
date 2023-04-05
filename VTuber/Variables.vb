@@ -22,9 +22,7 @@
                 If newestversion.Contains(currentversion) Then
 
                 Else
-                    If MsgBox("Do you want to go to the GitHub page to download this update?", MsgBoxStyle.YesNo, "Update Available") = MsgBoxResult.Yes Then
-                        Process.Start("https://github.com/windowslogic/vtubers.me-webapp/releases")
-                    End If
+                    UpdaterPrompt.ShowDialog()
                 End If
 
             Catch

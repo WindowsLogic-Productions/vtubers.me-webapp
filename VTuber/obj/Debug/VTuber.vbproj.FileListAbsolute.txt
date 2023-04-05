@@ -45,3 +45,6 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberWhatsNew.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberWidget.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.SettingsPanel.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.SettingsPanelGeneral.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.SettingsPanelPersonalise.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.SettingsPanelUpdates.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.UpdaterPrompt.resources
