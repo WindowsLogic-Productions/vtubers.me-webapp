@@ -2,7 +2,7 @@
 #Region "Shared Variables"
     Public Shared ver As String = My.Application.Info.Version.ToString & " (April 2023)"
     Public Shared user As String = System.Windows.Forms.SystemInformation.UserName
-    Public Shared appname As String = "Tweeter"
+    Public Shared appname As String = "VTubers.me Web App"
     Public Shared vertext As String = "http://u.windowslogic.co.uk/Updates/VTUBER/VTUBER.txt"
     Public Shared setup As String = "http://u.windowslogic.co.uk/Updates/VTUBER/VTuber%20Setup.exe"
 

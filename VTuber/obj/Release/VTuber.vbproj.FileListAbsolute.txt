@@ -25,3 +25,9 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberWhatsNew.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanel.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanelGeneral.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberWidget.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanelUpdates.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.SettingsPanelPersonalise.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.UpdaterPrompt.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberAbout.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberGTU.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Release\VTuber.VTuberProfile.resources

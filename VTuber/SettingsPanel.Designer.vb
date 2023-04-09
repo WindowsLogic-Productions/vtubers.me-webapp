@@ -55,7 +55,6 @@ Partial Class SettingsPanel
         'UpdatesSettingsButton
         '
         Me.UpdatesSettingsButton.BackColor = System.Drawing.Color.Transparent
-        Me.UpdatesSettingsButton.Enabled = False
         Me.UpdatesSettingsButton.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UpdatesSettingsButton.ForeColor = System.Drawing.Color.Black
         Me.UpdatesSettingsButton.Image = Global.VTuber.My.Resources.Resources.Update

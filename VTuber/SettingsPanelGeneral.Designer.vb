@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SettingsPanelGeneral
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class SettingsPanelGeneral
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsPanelGeneral))
@@ -38,7 +38,6 @@ Partial Class SettingsPanelGeneral
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GPSetLabel = New System.Windows.Forms.Label()
         Me.GPSetButton = New System.Windows.Forms.Button()
@@ -227,7 +226,6 @@ Partial Class SettingsPanelGeneral
         '
         'TabPage4
         '
-        Me.TabPage4.Controls.Add(Me.Label4)
         Me.TabPage4.Controls.Add(Me.GroupBox5)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
@@ -236,15 +234,6 @@ Partial Class SettingsPanelGeneral
         Me.TabPage4.TabIndex = 5
         Me.TabPage4.Text = "Profile"
         Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(40, 115)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(297, 13)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "KNOWN  BUG: Profile will not save after closing the app."
         '
         'GroupBox5
         '
@@ -542,7 +531,6 @@ Partial Class SettingsPanelGeneral
         Me.GroupBox4.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -598,5 +586,4 @@ Partial Class SettingsPanelGeneral
     Friend WithEvents WidgetText As TextBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label4 As Label
 End Class

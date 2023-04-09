@@ -1,2 +1,5 @@
-2023/04/05-20:46:09.532 338c Creating DB J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db since it was missing.
-2023/04/05-20:46:09.621 338c Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db/MANIFEST-000001
+2023/04/09-11:47:45.203 152c Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db/MANIFEST-000001
+2023/04/09-11:47:45.256 152c Recovering log #3
+2023/04/09-11:47:45.436 152c Level-0 table #3: started
+2023/04/09-11:47:45.451 152c Level-0 table #3: 378984 bytes OK
+2023/04/09-11:47:45.484 152c Delete type=0 #3

@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("VTuber")>
+<Assembly: AssemblyTitle("VTubers.me Web App")>
 <Assembly: AssemblyDescription("A simple window into VTubers.me.")>
 <Assembly: AssemblyCompany("WindowsLogic Productions")>
-<Assembly: AssemblyProduct("VTuber")>
+<Assembly: AssemblyProduct("VTubers.me Web App")>
 <Assembly: AssemblyCopyright("Copyright © 2023 WindowsLogic Productions")>
-<Assembly: AssemblyTrademark("VTuber")>
+<Assembly: AssemblyTrademark("VTubers.me Web App")>
 
 <Assembly: ComVisible(False)>
 

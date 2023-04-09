@@ -121,7 +121,9 @@
     <value>~Version 1.0.0.0~
 1. Added ability to set a custom background.
 2. Added ability to set a custom colour.
-3. 
+3. Fixed a bug that would cause an exception at start-up.
+4. Fixed a bug that would cause the Messages button to navigate to Notifications.
+5. Added ability to go directly to a user's profile.
 
 ~Version 0.5.0.0~ (We're in Beta!)
 1. Added Settings Panel.

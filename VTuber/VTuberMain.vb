@@ -77,7 +77,7 @@ Public Class VTuberMain
     End Sub
 
     Private Sub Messages_TSB_Click(sender As Object, e As EventArgs) Handles Messages_TSB.Click
-        WebView21.CoreWebView2.Navigate("https://vtubers.me/notifications")
+        WebView21.CoreWebView2.Navigate("https://vtubers.me/chats")
     End Sub
 
     Private Sub ExploreToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExploreToolStripMenuItem.Click
@@ -93,7 +93,7 @@ Public Class VTuberMain
     End Sub
 
     Private Sub About_TSM_Click(sender As Object, e As EventArgs) Handles About_TSM.Click
-        MsgBox("VTubers.me Web App " & My.Application.Info.Version.ToString & vbNewLine & My.Application.Info.Copyright)
+        VTuberAbout.ShowDialog()
     End Sub
 
     Private Sub TwitterSettings_TSM_Click(sender As Object, e As EventArgs) Handles TwitterSettings_TSM.Click
@@ -122,15 +122,21 @@ Public Class VTuberMain
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Me.Text = WebView21.CoreWebView2.DocumentTitle & " - VTubers.me"
+        Try
+            Me.Text = WebView21.CoreWebView2.DocumentTitle & " - VTubers.me"
+        Catch
+        End Try
 
-        If Me.Text.Contains("1" Or "2" Or "3" Or "4" Or "5" Or "6" Or "7" Or "8" Or "9" Or "10") Then
-            Me.Icon = My.Resources.vtubers_notif
-            Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
-        ElseIf WebView21.CoreWebView2.Source = "https://vtubers.me/notifications" Then
-            Me.Icon = My.Resources.vtubers
-            Me.SysTrayIcon.Icon = My.Resources.vtubers
-        End If
+        Try
+            If Me.Text.Contains("1" Or "2" Or "3" Or "4" Or "5" Or "6" Or "7" Or "8" Or "9" Or "10") Then
+                Me.Icon = My.Resources.vtubers_notif
+                Me.SysTrayIcon.Icon = My.Resources.vtubers_notif
+            ElseIf WebView21.CoreWebView2.Source = "https://vtubers.me/notifications" Then
+                Me.Icon = My.Resources.vtubers
+                Me.SysTrayIcon.Icon = My.Resources.vtubers
+            End If
+        Catch
+        End Try
 
         Try
             If WebView21.CoreWebView2.DocumentTitle.Length > 25 Then
@@ -213,7 +219,15 @@ Public Class VTuberMain
     End Sub
 
     Private Sub Profile_TSM_Click(sender As Object, e As EventArgs) Handles Profile_TSM.Click
-        WebView21.CoreWebView2.Navigate("https://vtubers.me/" & My.Settings.ProfileName)
+        If My.Settings.OCA = 0 Then
+            VTuberProfile.ShowDialog()
+        Else
+            WebView21.CoreWebView2.Navigate("https://vtubers.me/" & My.Settings.ProfileName)
+        End If
+    End Sub
+
+    Private Sub GoToUser_TSM_Click(sender As Object, e As EventArgs) Handles GoToUser_TSM.Click
+        VTuberGTU.ShowDialog()
     End Sub
 #End Region
 

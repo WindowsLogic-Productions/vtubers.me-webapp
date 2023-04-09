@@ -42,7 +42,17 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Changes">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Colours">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Feedback">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -68,6 +78,16 @@ VTuber
 </summary>
 </member>
 <member name="P:VTuber.My.Resources.Resources.Home">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.Information">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VTuber.My.Resources.Resources.LogOut">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

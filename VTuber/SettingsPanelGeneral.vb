@@ -6,6 +6,11 @@
 
     Private Sub SettingsPanelGeneral_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Load colour settings.
+        If My.Settings.CCE = 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
+
         'Load System Tray Minimise settings.
         If My.Settings.SysTrayMinimise = 0 Then
             SysTrayMinimiseBox.Checked = False

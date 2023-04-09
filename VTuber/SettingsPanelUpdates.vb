@@ -2,6 +2,11 @@
 #Region "Load Settings"
     Private Sub SettingsPanelUpdates_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Load colour settings.
+        If My.Settings.CCE - 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
+
         'Load update settings.
         If My.Settings.Updates = 1 Then
             EnableUpdates.Checked = True

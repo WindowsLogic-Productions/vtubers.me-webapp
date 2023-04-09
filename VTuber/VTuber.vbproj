@@ -117,10 +117,22 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Variables.vb" />
+    <Compile Include="VTuberAbout.Designer.vb">
+      <DependentUpon>VTuberAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VTuberAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTuberFeedback.Designer.vb">
       <DependentUpon>VTuberFeedback.vb</DependentUpon>
     </Compile>
     <Compile Include="VTuberFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VTuberGTU.Designer.vb">
+      <DependentUpon>VTuberGTU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VTuberGTU.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VTuberMain.vb">
@@ -144,6 +156,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VTuberProfile.Designer.vb">
+      <DependentUpon>VTuberProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VTuberProfile.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="VTuberWhatsNew.Designer.vb">
       <DependentUpon>VTuberWhatsNew.vb</DependentUpon>
@@ -174,8 +192,14 @@
     <EmbeddedResource Include="UpdaterPrompt.resx">
       <DependentUpon>UpdaterPrompt.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VTuberAbout.resx">
+      <DependentUpon>VTuberAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VTuberFeedback.resx">
       <DependentUpon>VTuberFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTuberGTU.resx">
+      <DependentUpon>VTuberGTU.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VTuberMain.resx">
       <DependentUpon>VTuberMain.vb</DependentUpon>
@@ -185,6 +209,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTuberProfile.resx">
+      <DependentUpon>VTuberProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VTuberWhatsNew.resx">
       <DependentUpon>VTuberWhatsNew.vb</DependentUpon>
@@ -267,6 +294,10 @@
     <None Include="Resources\BadGradient.png" />
     <None Include="Resources\WarningGradient.png" />
     <None Include="Resources\Updates New.ico" />
+    <None Include="Resources\LogOut.ico" />
+    <None Include="Resources\Changes.ico" />
+    <None Include="Resources\Feedback.ico" />
+    <None Include="Resources\Information.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

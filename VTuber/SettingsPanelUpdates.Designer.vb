@@ -22,6 +22,7 @@ Partial Class SettingsPanelUpdates
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsPanelUpdates))
         Me.UpdateBanner = New System.Windows.Forms.Panel()
         Me.BackButton = New System.Windows.Forms.Button()
@@ -38,6 +39,7 @@ Partial Class SettingsPanelUpdates
         Me.DisableUpdates = New System.Windows.Forms.RadioButton()
         Me.UpdateStatus = New System.Windows.Forms.PictureBox()
         Me.ManualUpdateButton = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.UpdateBanner.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -68,6 +70,7 @@ Partial Class SettingsPanelUpdates
         Me.BackButton.Name = "BackButton"
         Me.BackButton.Size = New System.Drawing.Size(53, 53)
         Me.BackButton.TabIndex = 15
+        Me.ToolTip1.SetToolTip(Me.BackButton, "Back to Settings Panel.")
         Me.BackButton.UseVisualStyleBackColor = True
         '
         'TitleLabel
@@ -202,7 +205,7 @@ Partial Class SettingsPanelUpdates
         '
         Me.UpdateStatus.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UpdateStatus.Image = Global.VTuber.My.Resources.Resources.BadGradient
+        Me.UpdateStatus.Image = Global.VTuber.My.Resources.Resources.GoodGradient
         Me.UpdateStatus.Location = New System.Drawing.Point(0, 0)
         Me.UpdateStatus.Name = "UpdateStatus"
         Me.UpdateStatus.Size = New System.Drawing.Size(409, 10)
@@ -268,4 +271,5 @@ Partial Class SettingsPanelUpdates
     Friend WithEvents DisableUpdates As RadioButton
     Friend WithEvents UpdateStatus As PictureBox
     Friend WithEvents ManualUpdateButton As Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
