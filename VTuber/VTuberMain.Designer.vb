@@ -306,6 +306,7 @@ Partial Class VTuberMain
         'CheckForUpdates_TSM
         '
         Me.CheckForUpdates_TSM.Enabled = False
+        Me.CheckForUpdates_TSM.Image = Global.VTuber.My.Resources.Resources.Update
         Me.CheckForUpdates_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CheckForUpdates_TSM.Name = "CheckForUpdates_TSM"
         Me.CheckForUpdates_TSM.Size = New System.Drawing.Size(196, 38)

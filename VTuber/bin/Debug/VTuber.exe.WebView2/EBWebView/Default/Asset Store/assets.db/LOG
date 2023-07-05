@@ -1,5 +1,3 @@
-2023/04/09-11:47:45.203 152c Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db/MANIFEST-000001
-2023/04/09-11:47:45.256 152c Recovering log #3
-2023/04/09-11:47:45.436 152c Level-0 table #3: started
-2023/04/09-11:47:45.451 152c Level-0 table #3: 378984 bytes OK
-2023/04/09-11:47:45.484 152c Delete type=0 #3
+2023/07/04-16:18:21.863 36ac Reusing MANIFEST J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db/MANIFEST-000001
+2023/07/04-16:18:21.867 36ac Recovering log #4
+2023/07/04-16:18:21.871 36ac Reusing old log J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\VTuber.exe.WebView2\EBWebView\Default\Asset Store\assets.db/000004.log 

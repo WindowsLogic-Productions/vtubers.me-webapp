@@ -23,7 +23,6 @@ Partial Class VTuberAbout
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VTuberAbout))
-        Me.MoreButton = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -34,24 +33,13 @@ Partial Class VTuberAbout
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MoreButton
-        '
-        Me.MoreButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MoreButton.Location = New System.Drawing.Point(433, 138)
-        Me.MoreButton.Name = "MoreButton"
-        Me.MoreButton.Size = New System.Drawing.Size(75, 23)
-        Me.MoreButton.TabIndex = 6
-        Me.MoreButton.Text = "More..."
-        Me.MoreButton.UseVisualStyleBackColor = True
-        '
         'LinkLabel1
         '
         Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.Cyan
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.ForeColor = System.Drawing.Color.White
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(284, 110)
+        Me.LinkLabel1.Location = New System.Drawing.Point(276, 110)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(112, 13)
         Me.LinkLabel1.TabIndex = 8
@@ -63,7 +51,7 @@ Partial Class VTuberAbout
         Me.Copyright.AutoSize = True
         Me.Copyright.BackColor = System.Drawing.Color.Transparent
         Me.Copyright.ForeColor = System.Drawing.Color.White
-        Me.Copyright.Location = New System.Drawing.Point(29, 71)
+        Me.Copyright.Location = New System.Drawing.Point(20, 71)
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(467, 65)
         Me.Copyright.TabIndex = 7
@@ -78,7 +66,7 @@ Partial Class VTuberAbout
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(520, 53)
+        Me.Panel1.Size = New System.Drawing.Size(506, 53)
         Me.Panel1.TabIndex = 9
         '
         'PictureBox2
@@ -106,7 +94,7 @@ Partial Class VTuberAbout
         '
         Me.OKButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OKButton.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.OKButton.Location = New System.Drawing.Point(352, 138)
+        Me.OKButton.Location = New System.Drawing.Point(419, 138)
         Me.OKButton.Name = "OKButton"
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
         Me.OKButton.TabIndex = 5
@@ -119,8 +107,7 @@ Partial Class VTuberAbout
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(520, 173)
-        Me.Controls.Add(Me.MoreButton)
+        Me.ClientSize = New System.Drawing.Size(506, 173)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Copyright)
         Me.Controls.Add(Me.Panel1)
@@ -131,6 +118,7 @@ Partial Class VTuberAbout
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "VTuberAbout"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About VTubers.me Web App"
         Me.Panel1.ResumeLayout(False)
@@ -140,8 +128,6 @@ Partial Class VTuberAbout
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MoreButton As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Copyright As Label
     Friend WithEvents Panel1 As Panel

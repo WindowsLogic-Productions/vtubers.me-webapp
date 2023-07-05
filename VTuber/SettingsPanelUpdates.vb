@@ -51,5 +51,10 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
+        SettingsPanel.Show()
+        Me.Close()
+    End Sub
 #End Region
 End Class

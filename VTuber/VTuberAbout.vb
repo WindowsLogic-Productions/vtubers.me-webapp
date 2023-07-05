@@ -14,7 +14,7 @@
         Me.Close()
     End Sub
 
-    Private Sub MoreButton_Click(sender As Object, e As EventArgs) Handles MoreButton.Click
+    Private Sub MoreButton_Click(sender As Object, e As EventArgs) 
 
     End Sub
 

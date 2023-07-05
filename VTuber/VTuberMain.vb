@@ -148,7 +148,6 @@ Public Class VTuberMain
                 SysTrayIcon.Text = "VTubers.me - " & source
             End If
         Catch ex As Exception
-            MsgBox("Could not update system tray icon text.", MsgBoxStyle.Critical, "Error")
         End Try
     End Sub
 
@@ -164,7 +163,7 @@ Public Class VTuberMain
         End Try
     End Sub
 
-    Private Sub TweeterMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub VTuberMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         If My.Settings.SysTrayMinimise = 1 Then
             If WindowState = FormWindowState.Minimized Then
                 Me.Visible = False
@@ -230,5 +229,4 @@ Public Class VTuberMain
         VTuberGTU.ShowDialog()
     End Sub
 #End Region
-
 End Class

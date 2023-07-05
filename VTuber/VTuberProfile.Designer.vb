@@ -47,9 +47,9 @@ Partial Class VTuberProfile
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(12, 11)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(168, 30)
+        Me.Label2.Size = New System.Drawing.Size(265, 30)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Set your profile..."
+        Me.Label2.Text = "Set your profile username..."
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'OKButton
@@ -88,7 +88,6 @@ Partial Class VTuberProfile
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.CancelButton = Me.CancelButton
         Me.ClientSize = New System.Drawing.Size(300, 122)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.OKButton)

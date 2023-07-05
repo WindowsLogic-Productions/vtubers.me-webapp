@@ -123,7 +123,7 @@ Partial Class SettingsPanelPersonalise
         Me.HubBackgroundBox.Size = New System.Drawing.Size(397, 167)
         Me.HubBackgroundBox.TabIndex = 4
         Me.HubBackgroundBox.TabStop = False
-        Me.HubBackgroundBox.Text = "Hub Background"
+        Me.HubBackgroundBox.Text = "Background"
         '
         'RB1Box
         '
