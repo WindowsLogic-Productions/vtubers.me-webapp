@@ -228,5 +228,9 @@ Public Class VTuberMain
     Private Sub GoToUser_TSM_Click(sender As Object, e As EventArgs) Handles GoToUser_TSM.Click
         VTuberGTU.ShowDialog()
     End Sub
+
+    Private Sub VmiumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VmiumToolStripMenuItem.Click
+        WebView21.CoreWebView2.Navigate("https://vtubers.me/premium_account")
+    End Sub
 #End Region
 End Class

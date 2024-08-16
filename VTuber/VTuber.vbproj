@@ -298,6 +298,7 @@
     <None Include="Resources\Changes.ico" />
     <None Include="Resources\Feedback.ico" />
     <None Include="Resources\Information.ico" />
+    <None Include="Resources\Donate.ico" />
     <Content Include="vtubers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

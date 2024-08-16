@@ -38,6 +38,7 @@ Partial Class VTuberMain
         Me.Lists_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mentions_TSM = New System.Windows.Forms.ToolStripMenuItem()
         Me.GoToUser_TSM = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VmiumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.Account_TSB = New System.Windows.Forms.ToolStripDropDownButton()
         Me.TwitterSettings_TSM = New System.Windows.Forms.ToolStripMenuItem()
@@ -156,7 +157,7 @@ Partial Class VTuberMain
         'More_TSB
         '
         Me.More_TSB.BackColor = System.Drawing.Color.Transparent
-        Me.More_TSB.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExploreToolStripMenuItem, Me.Profile_TSM, Me.Lists_TSM, Me.Mentions_TSM, Me.GoToUser_TSM})
+        Me.More_TSB.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExploreToolStripMenuItem, Me.Profile_TSM, Me.Lists_TSM, Me.Mentions_TSM, Me.VmiumToolStripMenuItem, Me.GoToUser_TSM})
         Me.More_TSB.ForeColor = System.Drawing.SystemColors.ControlText
         Me.More_TSB.Image = Global.VTuber.My.Resources.Resources.More
         Me.More_TSB.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -171,7 +172,7 @@ Partial Class VTuberMain
         Me.ExploreToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.Search
         Me.ExploreToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExploreToolStripMenuItem.Name = "ExploreToolStripMenuItem"
-        Me.ExploreToolStripMenuItem.Size = New System.Drawing.Size(153, 38)
+        Me.ExploreToolStripMenuItem.Size = New System.Drawing.Size(168, 38)
         Me.ExploreToolStripMenuItem.Text = "Explore"
         Me.ExploreToolStripMenuItem.ToolTipText = "Go to the VTubers.me explore page."
         '
@@ -181,7 +182,7 @@ Partial Class VTuberMain
         Me.Profile_TSM.Image = Global.VTuber.My.Resources.Resources.Social
         Me.Profile_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Profile_TSM.Name = "Profile_TSM"
-        Me.Profile_TSM.Size = New System.Drawing.Size(153, 38)
+        Me.Profile_TSM.Size = New System.Drawing.Size(168, 38)
         Me.Profile_TSM.Text = "Profile"
         Me.Profile_TSM.ToolTipText = "Go to your VTubers.me profile."
         '
@@ -191,7 +192,7 @@ Partial Class VTuberMain
         Me.Lists_TSM.Image = Global.VTuber.My.Resources.Resources.Analytics
         Me.Lists_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Lists_TSM.Name = "Lists_TSM"
-        Me.Lists_TSM.Size = New System.Drawing.Size(153, 38)
+        Me.Lists_TSM.Size = New System.Drawing.Size(168, 38)
         Me.Lists_TSM.Text = "Trending"
         Me.Lists_TSM.ToolTipText = "Go to the VTubers.me trending page."
         '
@@ -201,7 +202,7 @@ Partial Class VTuberMain
         Me.Mentions_TSM.Image = Global.VTuber.My.Resources.Resources.Mention
         Me.Mentions_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Mentions_TSM.Name = "Mentions_TSM"
-        Me.Mentions_TSM.Size = New System.Drawing.Size(153, 38)
+        Me.Mentions_TSM.Size = New System.Drawing.Size(168, 38)
         Me.Mentions_TSM.Text = "Mentions"
         Me.Mentions_TSM.ToolTipText = "Go to your VTubers.me mentions."
         '
@@ -211,9 +212,17 @@ Partial Class VTuberMain
         Me.GoToUser_TSM.Image = Global.VTuber.My.Resources.Resources.GoToUser
         Me.GoToUser_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.GoToUser_TSM.Name = "GoToUser_TSM"
-        Me.GoToUser_TSM.Size = New System.Drawing.Size(153, 38)
+        Me.GoToUser_TSM.Size = New System.Drawing.Size(168, 38)
         Me.GoToUser_TSM.Text = "Go to user..."
         Me.GoToUser_TSM.ToolTipText = "Go to a specified VTubers.me user's profile."
+        '
+        'VmiumToolStripMenuItem
+        '
+        Me.VmiumToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.Donate
+        Me.VmiumToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.VmiumToolStripMenuItem.Name = "VmiumToolStripMenuItem"
+        Me.VmiumToolStripMenuItem.Size = New System.Drawing.Size(168, 38)
+        Me.VmiumToolStripMenuItem.Text = "Vmium"
         '
         'ToolStripSeparator6
         '
@@ -285,7 +294,7 @@ Partial Class VTuberMain
         Me.NewWindowToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.NewWindow
         Me.NewWindowToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.NewWindowToolStripMenuItem.Name = "NewWindowToolStripMenuItem"
-        Me.NewWindowToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.NewWindowToolStripMenuItem.Size = New System.Drawing.Size(195, 38)
         Me.NewWindowToolStripMenuItem.Text = "New window"
         Me.NewWindowToolStripMenuItem.ToolTipText = "Open a new window."
         '
@@ -294,14 +303,14 @@ Partial Class VTuberMain
         Me.SettingsPanel_TSM.Image = Global.VTuber.My.Resources.Resources.Settings
         Me.SettingsPanel_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanel_TSM.Name = "SettingsPanel_TSM"
-        Me.SettingsPanel_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.SettingsPanel_TSM.Size = New System.Drawing.Size(195, 38)
         Me.SettingsPanel_TSM.Text = "Settings Panel"
         Me.SettingsPanel_TSM.ToolTipText = "Customise the settings of VTubers.me Web App."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(193, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(192, 6)
         '
         'CheckForUpdates_TSM
         '
@@ -309,7 +318,7 @@ Partial Class VTuberMain
         Me.CheckForUpdates_TSM.Image = Global.VTuber.My.Resources.Resources.Update
         Me.CheckForUpdates_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CheckForUpdates_TSM.Name = "CheckForUpdates_TSM"
-        Me.CheckForUpdates_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.CheckForUpdates_TSM.Size = New System.Drawing.Size(195, 38)
         Me.CheckForUpdates_TSM.Text = "Check for updates..."
         Me.CheckForUpdates_TSM.ToolTipText = "Check if you have the latest version."
         '
@@ -318,7 +327,7 @@ Partial Class VTuberMain
         Me.WhatsNew_TSM.Image = Global.VTuber.My.Resources.Resources.Changes
         Me.WhatsNew_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.WhatsNew_TSM.Name = "WhatsNew_TSM"
-        Me.WhatsNew_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.WhatsNew_TSM.Size = New System.Drawing.Size(195, 38)
         Me.WhatsNew_TSM.Text = "What's new?"
         Me.WhatsNew_TSM.ToolTipText = "See what's changed."
         '
@@ -327,28 +336,28 @@ Partial Class VTuberMain
         Me.SendFeedbackToolStripMenuItem.Image = Global.VTuber.My.Resources.Resources.Feedback
         Me.SendFeedbackToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SendFeedbackToolStripMenuItem.Name = "SendFeedbackToolStripMenuItem"
-        Me.SendFeedbackToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.SendFeedbackToolStripMenuItem.Size = New System.Drawing.Size(195, 38)
         Me.SendFeedbackToolStripMenuItem.Text = "Send feedback..."
         Me.SendFeedbackToolStripMenuItem.ToolTipText = "Tell us what you think."
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(193, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(192, 6)
         '
         'About_TSM
         '
         Me.About_TSM.Image = Global.VTuber.My.Resources.Resources.Information
         Me.About_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.About_TSM.Name = "About_TSM"
-        Me.About_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.About_TSM.Size = New System.Drawing.Size(195, 38)
         Me.About_TSM.Text = "About VTuber"
         Me.About_TSM.ToolTipText = "View legal information about Tweeter."
         '
         'ToolStripSeparator9
         '
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(193, 6)
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(192, 6)
         '
         'Exit_TSM
         '
@@ -356,7 +365,7 @@ Partial Class VTuberMain
         Me.Exit_TSM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.Exit_TSM.Name = "Exit_TSM"
         Me.Exit_TSM.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.Exit_TSM.Size = New System.Drawing.Size(196, 38)
+        Me.Exit_TSM.Size = New System.Drawing.Size(195, 38)
         Me.Exit_TSM.Text = "Exit"
         Me.Exit_TSM.ToolTipText = "End the application process."
         '
@@ -531,4 +540,5 @@ Partial Class VTuberMain
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Panel1 As Panel
     Friend WithEvents HubBackground As PictureBox
+    Friend WithEvents VmiumToolStripMenuItem As ToolStripMenuItem
 End Class

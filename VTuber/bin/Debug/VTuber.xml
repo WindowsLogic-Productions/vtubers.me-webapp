@@ -52,6 +52,11 @@ VTuber
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VTuber.My.Resources.Resources.Donate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VTuber.My.Resources.Resources.Feedback">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

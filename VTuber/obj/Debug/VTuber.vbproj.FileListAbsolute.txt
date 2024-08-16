@@ -34,13 +34,10 @@ J:\Projects\vtubers.me-webapp\VTuber\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberMain.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.Resources.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbproj.GenerateResource.cache
-J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbproj.CoreCompileInputs.cache
-J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbproj.CopyComplete
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.exe
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.xml
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.pdb
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberFeedback.resources
-J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbprojAssemblyReference.cache
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberWhatsNew.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberWidget.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.SettingsPanel.resources
@@ -51,3 +48,4 @@ J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.UpdaterPrompt.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberAbout.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberProfile.resources
 J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.VTuberGTU.resources
+J:\Projects\vtubers.me-webapp\VTuber\obj\Debug\VTuber.vbprojResolveAssemblyReference.cache
